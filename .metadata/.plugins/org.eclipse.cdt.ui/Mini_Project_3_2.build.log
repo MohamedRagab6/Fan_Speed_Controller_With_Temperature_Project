@@ -1,0 +1,34 @@
+00:35:04 **** Incremental Build of configuration Debug for project Mini_Project_3_2 ****
+make all 
+Building file: ../Mini_Project_3.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Mini_Project_3.d" -MT"Mini_Project_3.o" -c -o "Mini_Project_3.o" "../Mini_Project_3.c"
+Finished building: ../Mini_Project_3.c
+ 
+Building target: Mini_Project_3_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Mini_Project_3_2.map -mmcu=atmega16 -o "Mini_Project_3_2.elf"  ./Mini_Project_3.o ./adc.o ./gpio.o ./lcd.o ./lm35_sensor.o ./motor.o ./pwm.o   
+Finished building target: Mini_Project_3_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Mini_Project_3_2.elf  >"Mini_Project_3_2.lss"
+Finished building: Mini_Project_3_2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Mini_Project_3_2.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9210 bytes (56.2% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (29.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+00:35:05 Build Finished. 0 errors, 0 warnings. (took 1s.337ms)
+

@@ -1,0 +1,13 @@
+23:18:51 **** Incremental Build of configuration Debug for project koko ****
+make all 
+Building file: ../koko.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"koko.d" -MT"koko.o" -c -o "koko.o" "../koko.c"
+../koko.c: In function 'main':
+../koko.c:22: warning: passing argument 1 of 'ADC_init' makes pointer from integer without a cast
+../koko.c:22: error: too many arguments to function 'ADC_init'
+make: *** [koko.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+23:18:51 Build Failed. 2 errors, 1 warnings. (took 433ms)
+
